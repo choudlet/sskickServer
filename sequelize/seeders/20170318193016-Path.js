@@ -5,13 +5,13 @@ module.exports = {
 
       return queryInterface.bulkInsert('Paths', [{
         name: 'Goalie',
-        imageUrl: 'https://s3.amazonaws.com/sskick/GoalieImg',
+        imageUrl: 'https://s3.amazonaws.com/sskick/goalieImg.jpg',
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
         name: 'Player',
-        imageUrl: 'https://s3.amazonaws.com/sskick/PlayerImg',
+        imageUrl: 'https://s3.amazonaws.com/sskick/playerImg.jpg',
         createdAt: new Date(),
         updatedAt: new Date()
       }
