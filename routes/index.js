@@ -19,7 +19,8 @@ router.post('/FBLogAttempt', (req, res, next)=> {
     delete fbObject.picture
     delete fbObject.id
     modelConnect.Profile.create(fbObject).then(finish=>{
-      res.send(fbObject);
+      let completeInsertion = finish[0].dataValues;
+      res.send(completeInsertion);
     })
   });
 

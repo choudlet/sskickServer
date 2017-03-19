@@ -9,6 +9,6 @@ module.exports = {
         gender: data.gender,
         fbId: data.fbId,
         pictureURL: data.pictureURL
-      }});
+      }})
   },
 };
