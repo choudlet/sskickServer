@@ -9,10 +9,18 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       pathId: {
-        type: Sequelize.STRING
+        type: Sequelize.INTEGER
       },
       levelId: {
-        type: Sequelize.STRING
+        type: Sequelize.INTEGER
+      },
+      createdAt: {
+        allowNull: false,
+        type: Sequelize.DATE
+      },
+      updatedAt: {
+        allowNull: false,
+        type: Sequelize.DATE
       }
     });
   },

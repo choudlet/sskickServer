@@ -5,16 +5,24 @@ module.exports = {
 
         return queryInterface.bulkInsert('PathLevels', [{
             pathId: 1,
-            levelId: 1
+            levelId: 1,
+            createdAt: new Date(),
+            updatedAt: new Date()
         }, {
             pathId: 1,
-            levelId: 2
+            levelId: 2,
+            createdAt: new Date(),
+            updatedAt: new Date()
         }, {
             pathId: 1,
-            levelId: 3
+            levelId: 3,
+            createdAt: new Date(),
+            updatedAt: new Date()
         }, {
             pathId: 1,
-            levelId: 4
+            levelId: 4,
+            createdAt: new Date(),
+            updatedAt: new Date()
         }], {});
 
     },

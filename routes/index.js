@@ -37,3 +37,10 @@ router.get('/path', (req,res,next)=> {
     res.send(records)
   })
 })
+
+router.get('/path/:pathId', (req,res,next)=> {
+  console.log(req.params.pathId);
+  modelConnect.PathLevel.findPathLevels(req.params.pathId).then(data=> {
+    res.json(data);
+  });
+})
