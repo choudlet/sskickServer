@@ -6,7 +6,7 @@ module.exports = function(sequelize, DataTypes) {
   }, {
     classMethods: {
       associate: function(models) {
-        // associations can be defined here
+        Path.belongsToMany(models.Level, {through: models.PathLevel, foreignKey:'pathID'});
       }
     }
   });
