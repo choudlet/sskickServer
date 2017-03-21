@@ -8,6 +8,7 @@ module.exports = function(sequelize, DataTypes) {
     classMethods: {
       associate: function(models) {
       Level.belongsToMany(models.Path, {through: models.PathLevel, foreignKey:'levelId'});
+      Level.belongsToMany(models.Skill, {through: models.SkillLevel, foreignKey:'levelId'});
       }
     }
   });
