@@ -25,30 +25,3 @@ router.post('/FBLogAttempt', (req, res, next)=> {
   });
 
 });
-
-router.post('/test', (req,res,next)=> {
-})
-
-router.get('/path', (req,res,next)=> {
-  modelConnect.Path.read().then(data=> {
-    let records = data.map((element)=> {
-      return element.dataValues
-    });
-    res.send(records)
-  })
-})
-
-router.get('/path/:pathId', (req,res,next)=> {
-  console.log(req.params.pathId);
-  modelConnect.PathLevel.findPathLevels(req.params.pathId).then(data=> {
-    console.log(data);
-    res.json(data);
-  });
-});
-
-router.get('/level/:levelId', (req,res,next)=> {
-  console.log(req.params.levelId)
-  modelConnect.LevelSkill.findLevelSkills(req.params.levelId).then(data=> {
-    res.json(data);
-  })
-})

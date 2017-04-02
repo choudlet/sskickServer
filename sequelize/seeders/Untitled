@@ -1,0 +1,4 @@
+function dashatize(num) {
+ let arr = num.toString().split();
+ return arr;
+};
