@@ -20,3 +20,5 @@ router.get('/:pathId', (req,res,next)=> {
     res.json(data);
   });
 });
+
+module.exports = router;

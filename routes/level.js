@@ -10,3 +10,5 @@ router.get('/:levelId', (req,res,next)=> {
     res.json(data);
   })
 })
+
+module.exports = router;
