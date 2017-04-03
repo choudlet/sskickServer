@@ -24,7 +24,7 @@ router.post('/FBLogAttempt', (req, res, next) => {
 
 });
 
-router.post('/emailLogAttempt', (req, res, next) => {
+router.post('/emailCreateAttempt', (req, res, next) => {
     console.log(req.body)
     bcrypt.hash(req.body.userFormData.password, 10).then(function(hash) {
         let userObj = {
@@ -42,4 +42,8 @@ router.post('/emailLogAttempt', (req, res, next) => {
             })
         })
     });
+})
+
+router.post('/emailLogAttempt', (req,res,next)=> {
+  console.log(req.body);
 })
