@@ -16,7 +16,11 @@ router.post('/', (req,res,next)=>{
   }
   modelConnect.TrainRecord.createRecord(completeRecord).then(data=>{
     modelConnect.TrainRecord.getSingleUserSkillTime(trainingRecord.user_id, trainingRecord.drill_id).then(allRecords=>{
-      console.log(allRecords);
+      let timeArray = allRecords.map((element)=>{
+        return element.dataValues.duration
+      });
+      let formattedTime =  addTimes(timeArray);
+      res.send(formattedTime);
     })
   })
 })
@@ -43,5 +47,13 @@ function formatTimes(finalArr) {
     finalArr[0] = finalArr[0] % 60;
     finalArr.unshift(shiftAmount)
   }
-  return finalArr;
+  let result = finalArr.map((element)=>{
+    let stringNum =  String(element);
+    if (stringNum.length == 1 && stringNum == '0') {
+      stringNum = '00'
+    }
+    return stringNum
+  })
+
+  return result;
 }
