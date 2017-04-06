@@ -16,11 +16,13 @@ router.post('/', (req,res,next)=>{
   }
   modelConnect.TrainRecord.createRecord(completeRecord).then(data=>{
     modelConnect.TrainRecord.getSingleUserSkillTime(trainingRecord.user_id, trainingRecord.drill_id).then(allRecords=>{
+      let data ={};
+      data.trainingSessions = allRecords.length;
       let timeArray = allRecords.map((element)=>{
         return element.dataValues.duration
       });
-      let formattedTime =  addTimes(timeArray);
-      res.send(formattedTime);
+      data.formattedTime =  addTimes(timeArray);
+      res.send(data);
     })
   })
 })
