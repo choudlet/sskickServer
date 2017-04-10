@@ -138,7 +138,7 @@ module.exports = {
       updatedAt: new Date()
     },
     {
-      name: 'Opposite Hand Punch',
+      name: 'Overhead Flick',
       videoUrl: 'https://s3.amazonaws.com/sskick/Pro+Debut+ORANGE.mp4',
       description:'Thigh',
       color:'Orange',
@@ -146,6 +146,42 @@ module.exports = {
       createdAt: new Date(),
       updatedAt: new Date()
     },
+    {
+      name: 'Same Hand to Chest',
+      videoUrl: 'https://s3.amazonaws.com/sskick/Backyard+Basics+GOALIE.mp4',
+      description:'Hands',
+      color:'Green',
+      order:5,
+      createdAt: new Date(),
+      updatedAt: new Date()
+    },
+    {
+      name: 'Overhead Save',
+      videoUrl: 'https://s3.amazonaws.com/sskick/Schoolyard+Skills+GOALIE.mp4',
+      description:'Hands',
+      color:'Green',
+      order:3,
+      createdAt: new Date(),
+      updatedAt: new Date()
+    },
+    {
+      name: 'Opposite Hand Dive',
+      videoUrl: 'https://s3.amazonaws.com/sskick/College+Skills+GOALIE.mp4',
+      description:'Hands',
+      color:'Green',
+      order:1,
+      createdAt: new Date(),
+      updatedAt: new Date()
+    },
+    {
+      name: 'Opposite Hand Punch',
+      videoUrl: 'https://s3.amazonaws.com/sskick/College+Skills+GOALIE.mp4',
+      description:'Hands',
+      color:'Green',
+      order:1,
+      createdAt: new Date(),
+      updatedAt: new Date()
+    }
   ]);
   },
 

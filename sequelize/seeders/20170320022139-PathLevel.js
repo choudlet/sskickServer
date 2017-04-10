@@ -23,7 +23,29 @@ module.exports = {
             levelId: 4,
             createdAt: new Date(),
             updatedAt: new Date()
-        }], {});
+        },
+        {
+            pathId: 2,
+            levelId: 5,
+            createdAt: new Date(),
+            updatedAt: new Date()
+        }, {
+            pathId: 2,
+            levelId: 6,
+            createdAt: new Date(),
+            updatedAt: new Date()
+        }, {
+            pathId: 2,
+            levelId: 7,
+            createdAt: new Date(),
+            updatedAt: new Date()
+        }, {
+            pathId: 2,
+            levelId: 8,
+            createdAt: new Date(),
+            updatedAt: new Date()
+        }
+      ], {});
 
     },
 

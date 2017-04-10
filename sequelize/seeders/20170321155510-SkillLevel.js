@@ -85,7 +85,74 @@ module.exports = {
         skillId:16,
         createdAt: new Date(),
         updatedAt: new Date()
-    }], {});
+    },
+    {
+        levelId: 5,
+        skillId:1,
+        createdAt: new Date(),
+        updatedAt: new Date()
+    },
+    {
+        levelId: 5,
+        skillId:2,
+        createdAt: new Date(),
+        updatedAt: new Date()
+    },
+    {
+        levelId: 5,
+        skillId:3,
+        createdAt: new Date(),
+        updatedAt: new Date()
+    },
+    {
+        levelId: 5,
+        skillId:4,
+        createdAt: new Date(),
+        updatedAt: new Date()
+    },
+    {
+        levelId: 5,
+        skillId:17,
+        createdAt: new Date(),
+        updatedAt: new Date()
+    },
+    {
+        levelId: 6,
+        skillId:5,
+        createdAt: new Date(),
+        updatedAt: new Date()
+    },
+    {
+        levelId: 6,
+        skillId:6,
+        createdAt: new Date(),
+        updatedAt: new Date()
+    },
+    {
+        levelId: 6,
+        skillId:18,
+        createdAt: new Date(),
+        updatedAt: new Date()
+    },
+    {
+        levelId: 6,
+        skillId:18,
+        createdAt: new Date(),
+        updatedAt: new Date()
+    },
+    {
+        levelId: 7,
+        skillId:19,
+        createdAt: new Date(),
+        updatedAt: new Date()
+    },
+    {
+        levelId: 8,
+        skillId:20,
+        createdAt: new Date(),
+        updatedAt: new Date()
+    }
+  ], {});
   },
 
   down: function (queryInterface, Sequelize) {
